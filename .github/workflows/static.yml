@@ -33,10 +33,11 @@ jobs:
       - name: Build
         run: npm run build
       
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: dist/linked-in
