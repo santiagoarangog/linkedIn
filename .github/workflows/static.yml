@@ -45,3 +45,5 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: dist/linked-in
+        env:
+          GITHUB_TOKEN: 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
